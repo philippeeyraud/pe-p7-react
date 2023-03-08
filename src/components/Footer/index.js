@@ -1,4 +1,5 @@
-//import { Link } from 'react-router-dom';//<Link to="/">Retour à l'Accueil</Link>
+/*import { Link } from 'react-router-dom';
+<Link to="/">Retour à l'Accueil</Link>*/
 
 
 import  './footer.css';

@@ -4,6 +4,8 @@ import Results from './pages/Survey'
 import Error from "./components/Error"
 import Freelances from './pages/Freelances'
 import { Routes, Route  } from 'react-router-dom'
+import GlobalStyle from "./pages/utils/style/GlobalStyle.js";
+import {ThemeProvider, SurveyProvider} from "./pages/utils/context" ;
 
 const app = ()=>{
  
@@ -16,7 +18,9 @@ const app = ()=>{
         <Route  path="/freelances" element = {<><Freelances></Freelances> </> }/>
         <Route  path="/results" element = {<><Results></Results> </> }/>
         <Route path="/:error" element = {<><Error></Error> </> }/>
-        
+        <Route path="/:GlobalStyle" element = {<><GlobalStyle></GlobalStyle> </> }/>
+        <Route path="/:SurveyProvider" element = {<><SurveyProvider></SurveyProvider> </> }/>
+        <Route path="/:ThemeProvider" element = {<><ThemeProvider></ThemeProvider> </> }/>
     </Routes>
   
 

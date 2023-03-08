@@ -5,8 +5,8 @@ import Routes from "./routes";
 import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import {ThemeProvider, SurveyProvider} from "./pages/utils/context" ;
-import GlobalStyle from "./pages/utils/style/GlobalStyle.js";
+
+
 
 
 const reactRoot = reactDom.createRoot(document.getElementById("root"));
@@ -14,9 +14,9 @@ reactRoot.render(
   <React.StrictMode>
     
     <BrowserRouter>
-    <ThemeProvider/>
-    <GlobalStyle/>
-    <SurveyProvider/>
+   
+  
+   
       <Header />
       <Routes />
       <Footer />
