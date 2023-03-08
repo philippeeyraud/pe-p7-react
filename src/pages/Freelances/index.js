@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Card from '../../components/Card'
 import { Loader } from '../utils/style/Atoms'
 
-import './freelance.scss/'
+import './freelance.scss'
 
 
 

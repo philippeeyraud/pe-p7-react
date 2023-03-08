@@ -1,3 +1,14 @@
-.footer {
-  background-color: blue;
-}/*# sourceMappingURL=footer.css.map */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.night-mode-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: 'primary';
+}
