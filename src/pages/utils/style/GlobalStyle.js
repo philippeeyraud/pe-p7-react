@@ -8,7 +8,10 @@ const StyledGlobalStyle = createGlobalStyle`
     }
  
     body {
-     
+        /* Ici cette syntaxe revient au même que
+        background-color: ${({ props }) =>
+        props.isDarkMode ? '#2F2E41' : 'white'};
+        */
         background-color: ${({ isDarkMode }) => (isDarkMode ? 'black' : 'white')};
         margin: 0;  
     }

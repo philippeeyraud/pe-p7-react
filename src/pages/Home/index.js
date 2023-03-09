@@ -1,9 +1,9 @@
-import styled from 'styled-components'
-import colors from '../utils/style/colors'
-import { StyledLink } from '../utils/style/Atoms'
+//import styled from 'styled-components'
+//import colors from '../utils/style/colors'
+//import { StyledLink } from '../utils/style/Atoms'
 import logo from '../../assets/logo.svg'
 
-const HomeWrapper = styled.div`
+/*const HomeWrapper = styled.div`
   display: flex;
   justify-content: center;
 `
@@ -35,24 +35,24 @@ const StyledTitle = styled.h2`
 
 const Illustration = styled.img`
   flex: 1;
-`
+`*/
 
 function Home() {
   return (
-    <HomeWrapper>
-      <HomeContainer>
-        <LeftCol>
-          <StyledTitle>
+    <home-wrapper className = 'home-wrapper '>
+      <home-container className ='home-container'>
+        <left-col className = 'left-col'>
+          <styled-title className = 'styled-title'>
             Repérez vos besoins, on s’occupe du reste, avec les meilleurs
             talents
-          </StyledTitle>
-          <StyledLink to="/survey/1" $isFullLink>
+          </styled-title>
+          <styled-link className = 'style-link' to="/survey/1">
             Faire le test
-          </StyledLink>
-        </LeftCol>
-        <Illustration src={logo} />
-      </HomeContainer>
-    </HomeWrapper>
+          </styled-link>
+        </left-col>
+        <illustration className ='illustration' src={logo} />
+      </home-container>
+    </home-wrapper>
   )
 }
 

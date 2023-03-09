@@ -1,0 +1,10 @@
+.home-logo {
+  height: 70px;
+}
+
+.nav-container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

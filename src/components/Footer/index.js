@@ -1,5 +1,5 @@
-/*import { Link } from 'react-router-dom';
-<Link to="/">Retour à l'Accueil</Link>*/
+import { Link } from 'react-router-dom';
+
 
 
 import  './footer.css';
@@ -11,12 +11,13 @@ import { useContext } from 'react'
 function Footer() {
 const { toggleTheme, theme} = useContext(ThemeContext)
 
+
 return (
     <footer className= 'footer-container'>
-      
-      <nightModeButton className = 'night-mode-button' onClick={()=>toggleTheme()}
-      >Changer de mode : {theme === 'light' ? '☀️' : '🌙'}</nightModeButton>
-    </footer>
+      <Link to="/">Retour à l'Accueil</Link>
+      <night-mode-button className = 'night-mode-button' onClick={() =>toggleTheme()}>
+        Changer de mode :{theme === 'light' ? '☀️' : '🌙'}</night-mode-button>
+    </footer >
   )
 }
 

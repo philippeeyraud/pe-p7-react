@@ -1,0 +1,19 @@
+.error-wrapper {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-title {
+  font-weight: 300;
+}
+
+.errorSubtitle {
+  font-weight: 300;
+  color: 'secondary';
+}
+
+.illustration {
+  max-width: 800px;
+}

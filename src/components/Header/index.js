@@ -1,24 +1,15 @@
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import './header.scss'
 import { StyledLink } from '../../pages/utils/style/Atoms'
 import DarkLogo from '../../assets/dark-logo.png'
 
-const HomeLogo = styled.img`
-  height: 70px;
-`
 
-const NavContainer = styled.nav`
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
 
 function Header() {
   return (
-    <NavContainer>
+    <nav-container className = {'nav-container'}>
       <Link to="/">
-        <HomeLogo src={DarkLogo} />
+        <home-logo className = {'home-logo '} src={DarkLogo} />
       </Link>
       <div>
         <StyledLink to="/">Accueil</StyledLink>
@@ -27,7 +18,7 @@ function Header() {
           Faire le test
         </StyledLink>
       </div>
-    </NavContainer>
+    </nav-container>
   )
 }
 
