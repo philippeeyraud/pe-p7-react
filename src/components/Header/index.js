@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom'
 import './header.scss'
 import { StyledLink } from '../../pages/utils/style/Atoms'
-import DarkLogo from '../../assets/dark-logo.png'
+import DarkLogo from '../../assets/twitter (1).png'
+import styled from 'styled-components'
 
-
+const HomeLogo = styled.img`
+  height: 70px;
+`
 
 function Header() {
   return (
     <nav-container className = {'nav-container'}>
       <Link to="/">
-        <home-logo className = {'home-logo '} src={DarkLogo} />
+        <HomeLogo src={DarkLogo} />
       </Link>
       <div>
         <StyledLink to="/">Accueil</StyledLink>

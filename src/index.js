@@ -14,15 +14,16 @@ reactRoot.render(
   <React.StrictMode>
     
     <BrowserRouter>
+    <ThemeProvider >
    
-  
+    <SurveyProvider >
    
       <Header />
       <Routes />
       <Footer />
-    <SurveyProvider />
-    <ThemeProvider />
-
+    
+   </SurveyProvider>
+   </ThemeProvider>
      </BrowserRouter>
  
   </React.StrictMode>
