@@ -1,11 +1,11 @@
-import styled from 'styled-components'
-import colors from '../utils/style/colors'
-import { StyledLink } from '../utils/style/Atoms'
+//import styled from 'styled-components'
+//import colors from '../utils/style/colors'
+//import { StyledLink } from '../utils/style/Atoms'
 import logo from '../../assets/logo.svg'
 import  './home.scss';
 
 
-const HomeWrapper = styled.div`
+/*const HomeWrapper = styled.div`
   display: flex;
   justify-content: center;
 `
@@ -39,23 +39,23 @@ const StyledTitle = styled.h2`
 const Illustration = styled.img`
   flex: 1;
 `
-
+*/
 function Home() {
   return (
-    <HomeWrapper >
-      <HomeContainer>
-        <LeftCol >
-          <StyledTitle >
+    <homeWrapper className='home-wrapper' >
+      <homeContainer className ='homme-container'>
+        <leftCol className= 'left-col' >
+          <styledTitle className = 'style-title' >
             Repérez vos besoins, on s’occupe du reste, avec les meilleurs
             talents
-          </StyledTitle>
+          </styledTitle>
           <styled-link className = 'style-link' to="/survey/1">
             Faire le test
           </styled-link>
-        </LeftCol>
-        <Illustration src={logo} />
-      </HomeContainer>
-    </HomeWrapper>
+        </leftCol>
+        <img illustration src={logo} alt='logo'/>
+      </homeContainer>
+    </homeWrapper>
   )
 }
 

@@ -1,4 +1,4 @@
-
+@import '../../pages/utils/style/colors.scss';
 
 .footer-container {
     display: flex;
@@ -11,9 +11,6 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color:'primary';
-    
-
-
+    color:$secondary;
 }
 
